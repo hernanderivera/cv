@@ -1,0 +1,304 @@
+/* =================================== Google Web fonts ===================================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300|Ubuntu);
+
+/* =================================== Limpiando Floats =================================== */
+.clear:before {
+  content: "";
+  display: table;
+}
+.clear:after {
+  content:".";
+  clear: both;
+  display: block;
+  height:0;
+  visibility: hidden;
+}
+.clear {
+  *zoom: 1;
+}
+
+/* =================================== GENERAL =================================== */
+::-moz-selection,
+::selection {
+  color: normal;
+  background: normal;
+}
+body {
+  background-color: #DDD;
+  background:#DDD url(../imgs/bg/woods.jpg) center center repeat fixed;
+  color: #292929;
+  font-family: Arial, Helvetica;
+  font-size:16px;
+  margin:0;
+}
+a {
+  border:0;
+  color: #292929;
+  color:inherit;
+  text-decoration:none;
+}
+a:visited {}
+a:hover {
+  color: #292929;
+  color:inherit;
+  text-decoration:underline;
+}
+a:active {}
+
+figure {
+  display: block;
+  margin:0;
+  padding: 0;
+}
+img {border:0;}
+p{ margin: .5em 0;}
+h1,h2,h3,h4,h5,h6 {margin:0;}
+
+#page {
+  background-color: #fff;
+  box-sizing:border-box;
+  box-shadow:0 5px 20px #000;
+  margin: 1em auto;
+  max-width: 960px;
+  padding: 1em;
+}
+    #fotografia {
+      background-color: #fff;
+      box-shadow:0 0 5px #000;
+      float: left;
+      font-family: Courier;
+      padding: 10px;
+      margin:0 0 1em 2em;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+      -webkit-transition: all .2s;
+      transition:all .2s;
+    }
+    #fotografia:hover {
+      -webkit-transform:rotate(-2deg);
+    }
+
+    #nombre {
+      font-family:Helvetica, Arial;
+      font-size:4em;
+      letter-spacing:-0.05em;
+      line-height:1em;
+      text-align:right;
+      text-shadow:0 0 1px #292929;
+      text-transform:uppercase;
+    }
+    #profesion {
+      color: #808080;
+      font-size:2.5em;
+      letter-spacing:-0.05em;
+      text-align:right;
+      text-shadow:0 0 1px #888;
+    }
+    #personal-data{
+      border:none;
+    }
+      #bio {
+        background-color: #292929;
+        box-sizing: border-box;
+        color: #fff;
+        float: left;
+        font-family: Courier;
+        font-size:100%;
+        padding:  0 .5em 0;
+        margin: 0 10px 0 0;
+        max-width:280px;
+        
+      }
+      #personal {
+        float:left;
+        position: relative;
+      }
+        #data-list{
+          list-style:none!important;
+          margin: 0;
+          padding: 0;
+        }
+
+
+        #socialmedia {
+          display: block;
+          height:24px;
+          list-style: none;
+          margin: 0;
+          right:15%;
+          padding: 0;
+          position: absolute;
+          top:0;
+          
+        }
+        #socialmedia span {display:none;}
+        #socialmedia li {
+          display: block;
+          float: left;
+        }
+        #socialmedia li a {
+          display: block;
+          height:24px;
+          margin-right: 20px;
+          width:24px;
+        }
+          #rss     {background: url(../imgs/iconos/social-media.gif) 0px -24px;}
+          #twitter  {background: url(../imgs/iconos/social-media.gif) -24px -24px;}
+          #facebook {background: url(../imgs/iconos/social-media.gif) -48px -24px;}
+          #linkedin {background: url(../imgs/iconos/social-media.gif) -72px -24px;}
+          #skype    {background: url(../imgs/iconos/social-media.gif) -168px -24px;}
+          #pdf  {background: url(../imgs/iconos/Icono_pdf.jpg) -168,5px -24px;}
+
+    #rama1 {background-color: #009bdb;}
+    #rama2 {background-color: #ba007c;}
+    #rama3 {background-color: #feee00;}
+    #rama4 {background-color: #fe6f00;}
+
+
+
+/*----------------------------------*/
+.alignleft { float:left;}
+.alignright {float:right;}
+.aligncenter { display: block; margin: 0 auto;}
+.datos-content {
+  float: right;
+  width:68%;
+}
+.empresa {
+  font-size:1.1em;
+  font-style:italic;
+  font-weight:normal;
+}
+.info {
+  border-top:4px dashed #666;
+  padding: 1em 0;
+}
+.rama {
+  float: left;
+  max-width:30%;
+}
+.separador {
+  border-bottom:3px dotted #666;
+  margin-bottom:1em;
+}
+.skills {
+  display: block;
+  float: left;
+  list-style-type: square;
+  margin: 1em 0 0 1.2em;
+  padding: .1em 0;
+  width:250px;
+}
+  .skills li { line-height:1.5em;}
+  .skills li:hover {
+    background-color: #eee;
+  }
+
+
+.titulo-seccion {
+  color:#fff;
+  display: block;
+  font-size:1.8em;
+  font-weight:normal;
+  padding:5px;
+  text-shadow:1px 1px 1px #444;  
+}
+.periodo {
+  color:#666;
+  font-size:.8em;
+  letter-spacing:-1px;
+  text-transform:lowercase;
+}
+.porcentaje:before {  content:" - ["; }
+.porcentaje:after {  content:"] "; }
+.porcentaje {}
+.trabajo {
+  font-size:1.5em;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+  -ms-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.trabajo:hover {
+  background-color: #292929;
+  color:#fff;
+}
+
+.porcentaje:before {  content:" - ["; }
+.porcentaje:after {  content:"] "; }
+.porcentaje {}
+.formacion {
+  font-size:1.0em;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+  -ms-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.formacion:hover {
+  background-color: #39b4f8;
+  color:#fff;
+}
+
+.porcentaje:before {  content:" - ["; }
+.porcentaje:after {  content:"] "; }
+.porcentaje {}
+.cursos {
+  font-size:1.3em;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+  -ms-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.cursos:hover {
+  background-color: #1e6ff4;
+  color:#fff;
+}
+
+
+/*======================================================*/
+@media only screen and (max-width:650px) {
+  #page {
+    margin:1em .5em;
+  }
+  #fotografia {
+  float: none;
+  text-align:center;
+  margin: 0 auto 1em;
+  width:250px;
+  }
+  #nombre {
+    font-size:3em;
+    text-align:left;
+  }
+  #profesion {
+    font-size:2em;
+    text-align:left;
+  }
+  #bio {max-width:100%;}
+  #personal {
+    margin: 1em 0 ;
+    width:100%;
+  }
+    #socialmedia {
+      display: block;
+      position: static;
+      margin: 0 auto;
+    }
+  .rama {
+    margin: .5em 0;
+    max-width:100%;
+  }
+  .titulo-seccion {}
+  .datos-content {
+    width:100%;
+  }

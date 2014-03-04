@@ -1,0 +1,151 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu|Open+Sans:400,300|Maiden+Orange|Rokkitt);
+/*html5 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section
+{ display: block; }
+audio, canvas, video {display:block; *zoom: 1; margin: 0; padding: 0; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/*====================================================================
+Base
+====================================================================*/
+
+body {
+  background:#393939;
+  background-image:url(/imagen/bg/patron.png);
+  color: #efefef;
+  font-family:Helvetica, Arial;
+  font-size:18px;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0; font-weight:normal;}
+
+/* Links */
+a { color: #00e;  text-decoration: none;}
+a:visited { color: #551a8b;}
+a:visited { color: inherit;}
+a:hover { color: #06e; }
+a:focus { outline: thin dotted;}
+a:hover, a:active { outline: 0;}
+
+/* Nav con Listas */
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+/*Selecciones*/
+::selection { background: transparent; color: #fe57a1; text-shadow: none; }
+::-moz-selection { background: transparent; color: #fe57a1; text-shadow: none; }
+
+/*Limpieza de contenedores con floats*/
+.clear:after {
+  content:".";
+  clear: both;
+  display: block;
+  height:0;
+  visibility: hidden;
+}
+.container {clear: both; margin: 0 auto; width:100%;}
+.inner {margin: 0 auto; max-width:900px;}
+
+/*====================================================================
+Empezando el juego :D
+====================================================================*/
+
+p {padding:0 .5em;}
+
+#backToTop {
+  background:url(/imagen/iconos/arrow_up_50_50_black.png) center center no-repeat;
+  bottom:25px;
+  cursor: pointer;
+  height:50px;
+  right:25px;
+  position: fixed;
+  width:50px;
+}
+#name:before {
+  color: #fe57a1;
+  content:"{";
+  vertical-align:baseline;
+}
+#name:after {
+  color:#fe57a1;
+  content:"}";
+}
+#name {
+  font-family:'Droid Sans';
+  font-size:3em;
+  margin:.25em 0;
+  text-align:center;
+}
+@-webkit-keyframes tururu {
+  0%{
+    -webkit-transform: rotate(0deg);
+  }
+  20%{
+    -webkit-transform: rotate(1deg);
+  }
+  40%{
+    -webkit-transform: rotate(-1deg);
+  }
+  60%{
+    -webkit-transform: rotate(1deg);
+  }
+  80%{
+    -webkit-transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg); 
+  }
+}
+#foto-marco {
+  background-color: #fff;
+  box-shadow:0px 0px 30px #000, inset 0px 0px 5px #000;
+  margin:0 auto;
+  padding:1em 1em 3em;
+  max-width:350px;
+  -webkit-animation: tururu .5s 2s;
+}
+#foto-marco:hover{
+}
+#foto {
+  display: block;
+  width:100%;
+}
+#social {
+  background-color: #333;
+  box-shadow:inset 0 0 10px rgba(0,0,0,1);
+  border-radius: 6px;
+  margin:0 auto;
+  max-width:600px;
+  padding: 10px;
+  text-align:center;
+}
+.media-icon {
+  border:none;
+  display: block;
+  float:left;
+  height:100px;
+  margin:0 10px;
+  outline:none;
+  -webkit-transition: all .5s;
+  width:100px;
+}
+.media-icon:hover {
+  -webkit-transform: rotate(10deg) scale(1.05,1.05);
+}
+.media-icon img {
+  border:none;
+  height:100px;
+  outline:none;
+  width:100px;
+}
